@@ -3123,7 +3123,7 @@ vertical-align: -.125em;
 </header>
 
 
-<div id="cell-1" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="1">
+<div id="cell-1" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -3152,10 +3152,10 @@ vertical-align: -.125em;
 <ol start="2" type="1">
 <li>Import the q1data.csv dataset.</li>
 </ol>
-<div id="cell-6" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="2">
+<div id="cell-6" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>q1 <span class="op">=</span> pd.read_csv(<span class="st">&#39;/Users/bri_r/OneDrive/Desktop/GSB-544/Data/q1data.csv&#39;</span>)</span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>q1 <span class="op">=</span> pd.read_csv(<span class="st">&#39;Data/q1data.csv&#39;</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>q1.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
@@ -3247,7 +3247,7 @@ vertical-align: -.125em;
 <ol start="3" type="1">
 <li>Recreate the plot as best you can using plotnine.</li>
 </ol>
-<div id="cell-8" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="162">
+<div id="cell-8" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>(ggplot(q1.dropna(), aes(x<span class="op">=</span><span class="st">&#39;income&#39;</span>, y<span class="op">=</span><span class="st">&#39;life_exp&#39;</span>, size<span class="op">=</span><span class="st">&#39;population&#39;</span>, fill<span class="op">=</span><span class="st">&#39;four_regions&#39;</span>)) <span class="op">+</span></span>
@@ -3293,7 +3293,7 @@ vertical-align: -.125em;
 <ol start="4" type="1">
 <li>What other geometries could you use here besides geom_point? Provide an actual plot of another geometry being used here and why it’s good or bad for visualizing these data.</li>
 </ol>
-<div id="cell-11" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="142">
+<div id="cell-11" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Violin Plot</span></span>
@@ -3352,10 +3352,10 @@ vertical-align: -.125em;
 <ol start="2" type="1">
 <li>Import the q2data.csv dataset.</li>
 </ol>
-<div id="cell-18" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="76">
+<div id="cell-18" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>q2 <span class="op">=</span> pd.read_csv(<span class="st">&quot;/Users/bri_r/OneDrive/Desktop/GSB-544/Data/q2data.csv&quot;</span>)</span>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>q2 <span class="op">=</span> pd.read_csv(<span class="st">&quot;Data/q2data.csv&quot;</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Energy needs to be converted to numeric, but there are values ending in &#39;k&#39; (example: 18.8k instead of 18800)</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Suggested by ChatGPT 4o: Check for &#39;k&#39;, remove it, and multiply by 1000</span></span>
@@ -3367,7 +3367,7 @@ vertical-align: -.125em;
 <ol start="3" type="1">
 <li>Recreate the plot as best you can using plotnine.</li>
 </ol>
-<div id="cell-20" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="164">
+<div id="cell-20" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>(ggplot(q2.dropna(), aes(x<span class="op">=</span><span class="st">&#39;exports&#39;</span>, y<span class="op">=</span><span class="st">&#39;imports&#39;</span>, size<span class="op">=</span><span class="st">&#39;energy&#39;</span>, fill<span class="op">=</span><span class="st">&#39;four_regions&#39;</span>)) <span class="op">+</span></span>
@@ -3403,7 +3403,7 @@ vertical-align: -.125em;
 <ol start="4" type="1">
 <li>What other geometries could you use here besides geom_point? Provide an actual plot of another geometry being used here and why it’s good or bad for visualizing these data.</li>
 </ol>
-<div id="cell-22" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="134">
+<div id="cell-22" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Line plot</span></span>
@@ -3459,10 +3459,10 @@ vertical-align: -.125em;
 <ol start="2" type="1">
 <li>Import the q3data.csv dataset.</li>
 </ol>
-<div id="cell-28" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="103">
+<div id="cell-28" class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>q3 <span class="op">=</span> pd.read_csv(<span class="st">&quot;/Users/bri_r/OneDrive/Desktop/GSB-544/Data/q3data.csv&quot;</span>)</span>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>q3 <span class="op">=</span> pd.read_csv(<span class="st">&quot;Data/q3data.csv&quot;</span>)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>q3.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
